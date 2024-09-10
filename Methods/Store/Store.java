@@ -7,11 +7,12 @@ public class Store {
     productType = product;
   }
     
-  // Add advertise method below
-    public void advertise(){
-      System.out.println("Come spend some money!");
-      System.out.println("Selling " + productType + "!");
-
-    }
-
-}
+  // advertise method
+  public void advertise() {
+    String message = "Selling " + productType + "!";
+    System.out.println(message);
+  }
+    
+  // greetCustomer() method
+  public void greetCustomer(String customerName){
+    System.out.print("Welcome to the store, " + customerName + "!");
